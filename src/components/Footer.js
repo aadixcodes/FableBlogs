@@ -304,7 +304,7 @@ const Footer = () => {
                             type="submit"
                             className="px-6 py-3 bg-[#FF4F69] cursor-pointer hover:bg-[#FF4F69]/90 text-white font-medium  text-sm uppercase tracking-wider transition-colors duration-200 shadow-lg hover:shadow-xl whitespace-nowrap"
                         >
-                            Subscribe Now
+                            Subscribe
                         </button>
                     </form>
                     <p className="text-center text-gray-400 text-sm">
