@@ -135,7 +135,7 @@ const Navbar = () => {
             <div className="lg:hidden flex flex-col space-y-4">
               {/* First Row - Centered Logo */}
               <div className="flex justify-center">
-                <div className="w-48 h-12 flex items-center justify-center">
+                <div className="w-56 h-16 flex items-center justify-center">
                   <img 
                     src="/assets/logo.png" 
                     alt="GUTENVERSE" 
@@ -145,12 +145,6 @@ const Navbar = () => {
                       e.target.nextSibling.style.display = 'block';
                     }}
                   />
-                  {/* Fallback Text Logo */}
-                  <div className="hidden text-center">
-                    <h1 className="text-2xl font-bold tracking-tighter">
-                      GUTENVERSE
-                    </h1>
-                  </div>
                 </div>
               </div>
 
@@ -228,11 +222,11 @@ const Navbar = () => {
                     e.target.nextSibling.style.display = 'block';
                   }}
                 />
-                <div className="hidden text-center">
+                {/* <div className="hidden text-center">
                   <h1 className="text-xl font-bold tracking-tighter">
                     GUTENVERSE
                   </h1>
-                </div>
+                </div> */}
               </div>
               <button
                 onClick={toggleMenu}

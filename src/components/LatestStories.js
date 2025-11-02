@@ -49,19 +49,19 @@ const posts = [
 const LatestStories = () => {
   return (
     <section className="py-16 lg:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[85rem] mx-auto px-5 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+        <div className="text-start mb-8">
+          <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
             YOU HAVE TO READ THIS!
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Staff’s Picks
+          <h2 className="text-4xl lg:text-6xl font-bold text-[#191919]">
+            Latest Stories
           </h2>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Large Card (first item) – spans 1 column on all screens */}
           <article className="md:col-span-1 lg:col-span-1">
             <div className="relative mb-6 overflow-hidden">
@@ -74,9 +74,9 @@ const LatestStories = () => {
               />
             </div>
 
-            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight mb-3 group-hover:text-pink-600 transition-colors">
+            <a href="/" className="text-2xl lg:text-3xl font-bold text-[#191919] leading-tight mb-3 group-hover:text-[#FF4F69] transition-colors">
               {posts[0].title}
-            </h3>
+            </a>
 
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
               {posts[0].date} — {posts[0].category}
@@ -97,14 +97,14 @@ const LatestStories = () => {
           </article>
 
           {/* Small Cards – 3 in a column on lg, 2 on md, 1 on sm */}
-          <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-1 lg:grid-cols-1 md:col-span-1 lg:col-span-2 md:gap-8 lg:gap-12">
+          <div className="space-y-8 md:space-y-0 md:grid grid-cols-1 md:gap-8 lg:gap-12">
             {posts.slice(1).map((post) => (
               <article
                 key={post.id}
                 className="flex flex-col sm:flex-row gap-6 group"
               >
                 {/* Image */}
-                <div className="flex-shrink-0 w-full sm:w-32 lg:w-40">
+                <div className="flex-shrink-0 w-full sm:w-32 lg:w-72">
                   <div className="relative overflow-hidden">
                     <Image
                       src={post.image}
@@ -118,9 +118,9 @@ const LatestStories = () => {
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h3 className="text-lg lg:text-xl font-bold text-gray-900 leading-tight mb-2 group-hover:text-pink-600 transition-colors">
+                  <a href='/' className="text-lg lg:text-xl font-bold text-[#191919] leading-tight mb-2 group-hover:text-[#FF4F69] transition-colors">
                     {post.title}
-                  </h3>
+                  </a>
 
                   <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
                     {post.date} — {post.category}
@@ -134,7 +134,7 @@ const LatestStories = () => {
 
                   <a
                     href="#"
-                    className="inline-block text-pink-500 font-medium text-sm uppercase tracking-wider hover:text-pink-600 transition-colors"
+                    className="inline-block text-[#FF4F69] font-medium text-sm uppercase tracking-wider hover:text-[#FF4F69]/90 transition-colors"
                   >
                     {post.readMore} →
                   </a>

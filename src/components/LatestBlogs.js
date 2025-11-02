@@ -72,14 +72,14 @@ const blogPosts = [
 const LatestBlogs = () => {
   return (
     <>
-      <section className="py-8 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <section className="pt-8 lg:pt-24 bg-white">
+        <div className="max-w-[85rem] mx-auto px-5 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-left mb-8">
             <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
               BROWSE AND READ THE LATEST STUFF
             </p>
-            <h2 className="text-4xl lg:text-6xl font-bold text-gray-900">
+            <h2 className="text-4xl lg:text-6xl font-bold text-[#191919]">
               Latest Blogs
             </h2>
           </div>
