@@ -55,7 +55,7 @@ const LatestStories = () => {
           <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
             YOU HAVE TO READ THIS!
           </p>
-          <h2 className="text-4xl lg:text-6xl font-bold text-[#191919]">
+          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900">
             Latest Stories
           </h2>
         </div>
