@@ -4,6 +4,7 @@ import LatestBlogs from "@/components/LatestBlogs";
 import LatestStories from "@/components/LatestStories";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer";
+import Interesting from "@/components/Interesting";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <LatestBlogs />
     <LatestStories />
     <Subscribe />
+    <Interesting />
     <Footer />
     </>
   );
