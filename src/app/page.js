@@ -14,7 +14,7 @@ export default function Home() {
     <LatestStories />
     <Subscribe />
     <Interesting />
-    <Footer />
+    {/* <Footer /> */}
     </>
   );
 }
