@@ -82,7 +82,7 @@ const LatestStories = () => {
               {posts[0].date} — {posts[0].category}
             </p>
 
-            <div className="w-12 h-0.5 bg-pink-500 mb-3"></div>
+            <div className="w-12 h-0.5 bg-[#FF4F69] mb-3"></div>
 
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               {posts[0].excerpt}
@@ -90,7 +90,7 @@ const LatestStories = () => {
 
             <a
               href="#"
-              className="inline-block text-pink-500 font-medium text-sm uppercase tracking-wider hover:text-pink-600 transition-colors"
+              className="inline-block text-[#FF4F69] font-medium text-sm uppercase tracking-wider hover:text-[#FF4F69]/90 transition-colors"
             >
               {posts[0].readMore} →
             </a>

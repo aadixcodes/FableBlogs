@@ -100,8 +100,6 @@ const LatestBlogs = () => {
                       />
                     </div>
                   </div>
-                  {/* Decorative overlay on bottom-right */}
-                  {/* <div className="absolute bottom-0 right-0 w-12 h-12 bg-gray-900 transform translate-x-1/2 translate-y-1/2"></div> */}
                 </div>
 
                 {/* Content */}
