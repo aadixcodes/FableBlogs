@@ -42,36 +42,37 @@ const Footer = () => {
                         </li>
                         <li>
                             <a 
-                                href="/categories" 
+                                href="/interesting-stories" 
                                 className="text-[#191919] hover:text-[#FF4F69] transition-colors duration-200 font-medium"
                             >
-                                Categories
+                                Stories
                             </a>
                         </li>
                         <li>
                             <a 
-                                href="/about" 
+                                href="/news-articles" 
                                 className="text-[#191919] hover:text-[#FF4F69] transition-colors duration-200 font-medium"
                             >
-                                About
+                                News Articles
                             </a>
                         </li>
                         <li>
                             <a 
-                                href="/contact" 
+                                href="/about-us" 
                                 className="text-[#191919] hover:text-[#FF4F69] transition-colors duration-200 font-medium"
                             >
-                                Contact
+                                About Us
                             </a>
                         </li>
                         <li>
                             <a 
-                                href="/privacy" 
+                                href="/contact-us" 
                                 className="text-[#191919] hover:text-[#FF4F69] transition-colors duration-200 font-medium"
                             >
-                                Privacy Policy
+                                Contact Us
                             </a>
                         </li>
+                        
                     </ul>
                 </nav>
 
