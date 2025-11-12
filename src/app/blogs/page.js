@@ -165,7 +165,7 @@ export default function Blogs() {
                     </div>
                     
                     <h2 className="text-2xl lg:text-4xl font-bold leading-tight mb-4 group-hover:text-[#FF4F69] transition-colors">
-                      <a href="/blog/digital-storytelling-future" className="hover:underline">
+                      <a href="/blogs/digital-storytelling-future" className="hover:underline">
                         {largePost.title}
                       </a>
                     </h2>
@@ -186,7 +186,7 @@ export default function Blogs() {
                         </div>
                       </div>
                       <a
-                        href="/blog/digital-storytelling-future"
+                        href="/blogs/digital-storytelling-future"
                         className="hidden cursor-pointer md:inline-flex items-center px-4 py-2 bg-[#FF4F69] text-white text-sm font-medium rounded-lg hover:bg-[#FF4F69]/90 transition-colors"
                       >
                         Read Full Story <ChevronRight className="w-4 h-4 ml-1" />
@@ -225,7 +225,7 @@ export default function Blogs() {
                     </div>
                     
                     <h3 className="text-lg font-bold text-gray-900 leading-tight mb-3 group-hover:text-[#FF4F69] transition-colors">
-                      <a href={`/blog/${post.title.toLowerCase().replace(/ /g, '-')}`} className="hover:underline">
+                      <a href={`/blogs/${post.title.toLowerCase().replace(/ /g, '-')}`} className="hover:underline">
                         {post.title}
                       </a>
                     </h3>
@@ -261,7 +261,7 @@ export default function Blogs() {
               <ul className="space-y-4">
                 {sidebar.popular.items.map((item, i) => (
                   <li key={i} className="border-b border-gray-100 pb-4 last:border-0 last:pb-0">
-                    <a href="#" className="group block hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                    <a href="/blogs/as" className="group block hover:bg-gray-50 p-2 rounded-lg transition-colors">
                       <p className="text-xs text-gray-500 mb-1">{item.date}</p>
                       <p className="text-sm font-medium text-gray-900 leading-tight mb-2 group-hover:text-[#FF4F69] transition-colors">
                         {item.text}
@@ -276,33 +276,6 @@ export default function Blogs() {
                           {item.likes} likes
                         </span>
                       </div>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Recent Discussions */}
-            <div className="bg-white shadow-md p-6 border border-gray-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <MessageCircle className="w-5 h-5 text-[#FF4F69]" />
-                {sidebar.comments.title}
-              </h3>
-              <ul className="space-y-4">
-                {sidebar.comments.items.map((item, i) => (
-                  <li key={i} className="border-b border-gray-100 pb-4 last:border-0 last:pb-0">
-                    <a href="#" className="group block hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                      <div className="flex items-start gap-3 mb-2">
-                        <div className="w-8 h-8 bg-gradient-to-br from-[#FF4F69] to-[#FF4F69]/90 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                          {item.user.charAt(0)}
-                        </div>
-                        <div className="flex-1">
-                          <p className="text-xs text-gray-500 mb-1">{item.date}</p>
-                          <p className="text-sm font-medium text-gray-900">{item.user}</p>
-                        </div>
-                      </div>
-                      <p className="text-sm text-gray-700 italic mb-2">"{item.text}"</p>
-                      <p className="text-xs text-gray-500">on: {item.post}</p>
                     </a>
                   </li>
                 ))}
@@ -337,3 +310,4 @@ export default function Blogs() {
     </div>
   );
 }
+

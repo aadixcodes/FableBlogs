@@ -91,7 +91,7 @@ const LatestBlogs = () => {
                 {/* Image Container */}
                 <div className="relative overflow-hidden mb-6">
                   <div className="aspect-w-4 aspect-h-3 w-full">
-                    <div className="w-full h-64 bg-gray-200 border-2 border-dashed rounded-none overflow-hidden">
+                    <div className="w-full h-64 bg-gray-200 rounded-none overflow-hidden">
                       <Image
                         src={post.image}
                         alt={post.title}
